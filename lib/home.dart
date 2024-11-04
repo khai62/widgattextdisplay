@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widgattext/drawer.dart';
 
 class MyHome extends StatelessWidget {
   const MyHome({super.key});
@@ -7,8 +8,9 @@ class MyHome extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        automaticallyImplyLeading: false,
+  
       ),
+      drawer: MyDrawer(),
       body: Container(
         padding: const EdgeInsets.only(left: 15, right: 15),
         child: const Column(
